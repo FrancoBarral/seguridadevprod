@@ -1271,7 +1271,7 @@ pricing
 
 .pricing-item .pricing-header .pricing-title {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 25px;
   letter-spacing: 0.25px;
   color: #1e1e1e;
   width: 180px;
@@ -1280,10 +1280,19 @@ pricing
   left: 0px;
   right: 0px;
   margin: auto;
+  font-weight: 500;
 }
 
 .pricing-item .pricing-body {
   margin-bottom: 40px;
+}
+.pricing-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.pricing-body i img{
+  width: 80px;
 }
 
 .pricing-item .pricing-body .price-wrapper {
@@ -1542,6 +1551,17 @@ footer .copyright {
 preloader
 --------------------------------------------- 
 */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+}
+.contact-form h1, .contact-form span{
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
 #preloader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #F8EF3C 0%, #F8EF3C 100%);
