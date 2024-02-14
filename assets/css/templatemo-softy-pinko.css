@@ -672,9 +672,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/carousel-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url(../images/Alarmas-para-Casas2.jpg);
   background-size: cover; 
   height: 100vh;
 }
@@ -873,22 +871,14 @@ parallax & home seperator
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
-}
-
-.mini:before {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 140%;
-  opacity: .95;
+  background-image: url(../images/CAMARA\ -\ BULLET\ 2\ PRO\ PARA\ BANNER.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-image: url(../images/carousel-2.jpg);
-  z-index: 2;
-  top: -20%;
-  left: -20%;
+  background-position: center;
+  opacity: 0.95;
+  color: #000;
 }
+
 
 .mini .mini-content {
   position: relative;
@@ -897,7 +887,7 @@ parallax & home seperator
 
 .mini .mini-content .info {
   text-align: center;
-  color: #fff;
+  color: #000;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -917,7 +907,7 @@ parallax & home seperator
 }
 
 .mini .mini-content .info h1 {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   font-size: 28px;
   letter-spacing: 0.25px;
@@ -927,7 +917,7 @@ parallax & home seperator
 .mini .mini-content .info p {
   letter-spacing: 1px;
   margin-bottom: 40px;
-  color: #fff;
+  color: #000;
   letter-spacing: 0.25px;
   line-height: 26px;
   font-weight: 400;
