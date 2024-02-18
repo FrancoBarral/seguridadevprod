@@ -415,10 +415,7 @@ header
 }
 
 .header-area .main-nav {
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  border-radius: 40px;
   min-height: 80px;
-  background: #fff;
 }
 
 .header-area .main-nav .logo {
@@ -428,7 +425,7 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin-left: 30px;
+
 }
 
 .header-area .main-nav .logo img {
@@ -483,7 +480,7 @@ header
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 23px;
+  top: 60px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -576,7 +573,7 @@ header
 }
 
 .logo img{
-  width: 120px;
+  width: 250px;
 }
 
 .header-area.header-sticky .nav {
@@ -613,7 +610,7 @@ header
   }
   .header-area .logo img{
     margin-top: 10px;
-    width: 100px;
+    width: 180px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -622,6 +619,7 @@ header
     overflow: hidden;
   }
   .header-area .main-nav .nav {
+    overflow: hidden;
     float: none;
     width: 100%;
     margin-top: 80px !important;
@@ -670,11 +668,21 @@ welcome
   overflow: hidden;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/Alarmas-para-Casas2.jpg);
-  background-size: cover; 
+  align-items: start;
+  justify-content: start;
   height: 100vh;
+}
+.welcome-area::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 2;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
 }
 
 .welcome-area .header-text {
@@ -691,13 +699,13 @@ welcome
   line-height: 54px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
-  color: #fff;
+  color: #000;
 }
 
 .welcome-area .header-text p {
   font-weight: 400;
   font-size: 15px;
-  color: #fff;
+  color: #000;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
@@ -712,15 +720,15 @@ welcome
   }
   .welcome-area .header-text h1 {
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-bottom: 15px;
   }
   .welcome-area .header-text h1 span {
-    color: #fff;
+    color: #000;
   }
   .welcome-area .header-text p {
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-bottom: 20px;
   }
 }
@@ -743,6 +751,10 @@ welcome
 @media (max-width: 765px) {
   .welcome-area {
     margin-bottom: 100px;
+    
+  }
+  .welcome-area::before {
+    background-position: 20% 20%;
   }
   .welcome-area .header-text {
     top: 50% !important;
@@ -759,14 +771,20 @@ welcome
     margin-bottom: 30px !important;
   }
   .welcome-area .header-text h1 span {
-    color: #fff;
+    color: #000;
   }
   .welcome-area .header-text p {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .welcome-area::before {
+    background-position: 25% 25%;
   }
 }
 
