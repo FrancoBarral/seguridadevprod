@@ -581,6 +581,14 @@ header
   border-bottom: 1px solid #F8EF3C;
 }
 
+.navbar-brand {
+  margin-left: -50px;
+}
+
+.navbar-toggler {
+  margin-left: 150px;
+}
+
 /* 
 ---------------------------------------------
 welcome
@@ -1580,6 +1588,8 @@ preloader
   justify-content: end;
   background-color: #F8EF3C;
   padding-right: 40px;
+  padding-bottom: 5px;
+  padding-left: 25px;
 }
 
 .contact-form-area h1,
